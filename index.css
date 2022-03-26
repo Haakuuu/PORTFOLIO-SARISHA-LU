@@ -1,0 +1,425 @@
+@import url('https://fonts.googleapis.com/css2?family=Freehand&display=swap');
+
+:root {
+    --clr-light: #fff;
+    --clr-dark: #080505;
+    --clr-accent: #2fbdaa;
+    /* #2fbdaa */
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:var(--clr-light);
+}
+header{
+    height: 7vh;
+    width: 100%;
+    background-color: var(--clr-dark);
+    /* color: rgb(0, 0, 0); */
+    display: flex;
+    flex-direction:center;
+    position: fixed;
+    
+}
+.logo{
+    background-size: cover;
+    margin-right: auto;
+    color: var(--clr-light);
+    font-size: 4vh;
+    /* background-color: #fff; */
+    margin-left: 10VW;
+    line-height: 7vh;
+    width: 10vw;
+    text-align: center;
+}
+.logo>span>img{
+    display: none;
+}
+.logo>button{
+    display: none;
+}
+.logo>.logoname{
+    color: var(--clr-light);
+}
+.navbar{
+    display: flex;
+   margin-left: auto;
+   width: 40vw;
+   justify-content: space-evenly;
+     margin-right: 10vw;
+    color: var(--clr-dark);
+    /* border: 1px solid black; */
+    list-style: none;
+    line-height: 7vh;
+    padding: 0px 5%;
+}
+.navbar>a{
+     /* background-color: #874356; */
+     font-weight: bold;
+     color:var(--clr-light);
+     padding: 0px 5%;
+     text-decoration: none;
+}
+a:hover{
+    background-color:var(--clr-accent);
+    color:rgb(0, 0, 0)
+}
+.navbar>a:active{
+  background-color:var(--clr-accent);
+}
+#home{
+    height: 100vh;
+    background-color: var(--clr-dark);
+    display: flex;
+}
+.pic{
+    height: 80vh;
+    width: 35vw;
+    align-self: center;
+    margin-left: 5%;
+    filter: contrast(1.2);
+    animation: pic 2s ease-in-out .1s infinite alternate;
+}
+@keyframes pic {
+from{
+ transform: scale(1);
+}
+to{
+    transform: scale(1.05);
+}
+    
+}
+.me{
+    
+   transition-duration: repeat;
+    align-self: center;
+    text-align:center ;
+    margin-left: 8%;
+    margin-bottom: 30vh;
+    width: auto;
+    height: 20vh;
+    font-size: 2.5em;
+}
+.me>button{
+    font-weight: bold;
+    padding:10px 20px;
+    margin-top: 20px;
+    background: var(--clr-dark);
+    color: var(--clr-light);
+    border: 1px solid var(--clr-accent);
+}
+.me>button:hover{
+    background-color: var(--clr-light);
+    color: var(--clr-dark)
+
+}
+.me>button>a{
+    font-weight: bold;
+    font-size: 2em;
+    color:var(--clr-light);
+    padding: 0px 0%;
+    text-decoration: none;
+}
+.me>button>a:hover{
+    background-color: var(--clr-light);
+    color: var(--clr-dark)
+}
+h3{
+    background-color: var(--clr-accent);
+    color: var(--clr-dark);
+}
+span{
+    color:var(--clr-accent);
+    font-family:  'Freehand', cursive;
+    font-size: 1.5em;
+    font-weight: lighter;
+    
+}
+.sari{
+    animation: sari 2s linear .1s infinite forwards;
+}
+@keyframes sari {
+    from {color:var(--clr-accent);}
+    to {color:var(--clr-light);}
+  }
+#skills{
+    background-color:var(--clr-accent);
+    height: 100vh;
+    display: flex;
+}
+.skillcontainer{
+    height: 80vh;
+    width: 80vw;
+    margin:5% 10%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: var(--clr-dark);
+}
+.img{
+     text-align: center;
+}
+.img>img{
+    /* background-color: #fff; */
+    padding: 5% 0%;
+    display: flex;
+     animation: bounce 1s ease-in-out .1s infinite alternate;
+}
+@keyframes bounce{
+    from{  
+            background-color: var(--clr-dark);
+            transform: scale(0.5);
+
+        }
+    to{
+
+        transform: scale(1.2);
+    }
+}
+#projects{
+    padding: 5% 5%;  
+    background-color:var(--clr-dark);
+    height: 200vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.p1>iframe{
+    overflow: hidden;
+    scroll-behavior: smooth;
+    width:55vw;
+    height: 60vh;
+     margin: 0%;
+    padding: 0%;
+}
+.twoo>iframe{
+    width:54vw;
+    height: 75vh;
+}
+#about{
+    background-color:var(--clr-accent);
+    color: var(--clr-dark);
+    height: 93vh;
+    display: flex;
+    align-items: center;
+   justify-content: center;
+   /* border: 1px solid pink; */
+}
+.picture{
+    /* padding: 10%; */
+    margin-top: 5%;
+    height: 80vh;
+    width: 40vw;
+    /* background-color:#2fbdaa; */
+    background-image:url("./images/aboutme.png") ;
+    background-size: cover;
+    filter: hue-rotate(160deg) contrast(130%);
+
+}
+.aboutdetails{
+    width: 35%;
+    height: 50%;
+    margin: 6%;
+    background-color: var(--clr-dark);
+    box-shadow: 3px -3px 10px var(--clr-light);
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap; color: var(--clr-dark);
+}
+.aboutdetails>div>p{
+    background-color:var(--clr-dark);
+    color: var(--clr-light);
+}
+.aboutdetails>div{
+   
+    flex-wrap: wrap;
+    text-align:center ;
+    font-size: 20px;
+    line-height: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.footer {
+    background: var(--clr-dark);
+    color: var(--clr-light);
+    text-align: center;
+    height: 7vh;
+
+}
+
+.footer a { 
+    color: var(--clr-light);
+    text-decoration: none;
+}
+
+.footerchild {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+.linkitem {
+    margin: 0 .5em;
+    color: var(--clr-light);
+    margin-top: 5px;
+}
+
+.link {
+    padding:0 .5em;
+}
+.linkitem>link>img{
+    
+    overflow: hidden;
+}
+.linkitem>a:hover{
+background-color: var(--clr-dark);
+overflow: hidden;
+}
+
+
+@media screen and (max-width:500px){
+    header{
+        flex-direction: column;
+        overflow: hidden;
+    }
+    header:hover{
+        height: auto;
+    }
+    .logo{
+        width: 100%;
+        text-align:start;
+        background-size: cover;
+        margin: 0px 30px;
+        color: var(--clr-light);
+        font-size: 3vh;
+        display: flex;
+        line-height: 7vh;
+    }
+    .logo>span>img{
+        height: 4vh;
+        display: flex;
+        align-self: center;
+        margin-top: 1.4vh;
+        overflow: hidden;
+       margin-left: 50vw;
+    }
+    .navbar{
+        width: 100%;
+        margin: 0%;
+        justify-content: space-evenly;
+        color: var(--clr-dark);
+        list-style: none;
+        line-height: 7vh;
+        padding: 0% 5%;
+        flex-direction: column;
+    }
+    
+    .pic{
+        height: 39vh;
+        width: 35vw;
+        align-self: center;
+        margin-left: 5%;
+        width: auto;
+        margin-bottom: 30vh;
+        margin-left: 5%;  
+        filter: contrast(1.2);
+        flex-direction: column;
+/*        
+        border: 1px solid rgb(255, 255, 255); */
+    }
+    .me{ 
+        flex-direction: column;
+        align-self: center;
+        text-align:center ;
+        margin-left: -90%;
+        margin-top: 55vh;
+        width: auto;
+        font-size: 1.3em;  
+        /* border: 1px solid rgb(255, 255, 255);
+
+        */
+    }
+    h3{
+        width: 50vw;
+        margin: 0vh 25vw;;
+        text-align: center;
+        justify-content: center;
+        justify-items: center;
+        
+    }
+    span{
+        color:var(--clr-accent);
+        font-family:  'Freehand', cursive;
+        font-size: 1.5em;
+        font-weight: lighter;
+    }
+    #skills{
+        background-color:var(--clr-accent);
+        height: 100vh;
+        display: flex;
+    }
+    .skillcontainer{
+        margin:10% 10%;
+        flex-direction: row;
+    }
+    .img>img{
+
+    padding: 5% 0%;
+}
+    @keyframes bounce{
+        from{  
+                background-color: var(--clr-dark);
+                transform: scale(0.5)
+    
+            }
+        to{
+            transform: scale(1.1);
+        }
+    
+    }
+    #projects{
+        padding: 5% 5%;  
+        background-color:var(--clr-dark);
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    
+    .p1>iframe{
+        overflow: hidden;
+        scroll-behavior: smooth;
+        width:100vw;
+        height: 50vh;
+        margin-top: 7vh;
+    }
+    .twoo>iframe{
+        width:100vw;
+        height: 90vh;
+        margin-top: 7vh;
+    }
+    
+    #about{
+        flex-direction: column;
+    }
+    .picture{
+         margin-top: 20%;
+        height: 30vh;
+        width: 80vw;
+        background-image:url("./images/aboutme.png") ;
+        background-size: cover;
+        filter: hue-rotate(160deg) contrast(130%);
+    }
+    .aboutdetails{
+        width: 80vw;
+    }
+    .aboutdetails>div>p{
+        margin: 0vh 0vw;
+    }
+}
